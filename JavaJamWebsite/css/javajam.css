@@ -1,0 +1,203 @@
+header, main, nav, footer, figure, figcaption, aside, section, article { display: block; }
+
+body {
+  background-color: #F5F5DC;
+  background-image: url(../images/javabackground.gif);
+  color: #2E0000;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+#wrapper {
+  background-color: #E2D2B0;
+  box-shadow: 3px 3px 3px #2E0000;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 960px; 
+  max-width: 2048px; 
+  width: 80%; 
+}
+
+header { background-color: #D2B48C; }
+
+h1 { 
+  background-image: url(../images/javalogo.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Georgia, "Times New Roman", serif; 
+  height: 100px;
+  margin: 0;
+  text-indent: -9999px; 
+}
+
+nav {
+  float: left; 
+  font-weight: bold; 
+  padding: 10px; 
+  text-align: center;  
+  width: 160px; 
+}
+
+nav ul {
+  font-size: 1.2em;
+  list-style-type: none; 
+  padding-left: 0;  
+}
+
+nav a { text-decoration: none; }
+
+nav a:link { color: #795240; } 
+
+nav a:visited { color: #A58366; } 
+
+nav a:hover, nav a:focus { background-color: #F5F5DC; } 
+
+main {
+  background-color: #F5F5DC; 
+  display: block; 
+  margin-left: 175px; 
+  padding: 20px; 
+}
+
+main img { float: left; padding-right: 2em; }
+
+main article {
+  font-size: 90%; 
+  margin: 0 20%;
+  overflow: auto; 
+  padding-left: 5%;
+  padding-right: 5%;
+} 
+
+h2 {  font-family: Georgia, "Times New Roman", serif;  }
+
+h3 {
+  background-color: #E6D6A9;
+  text-transform: uppercase;
+}
+
+dt { font-weight: bold; }
+
+main ul {
+  list-style-image: url(../images/marker.gif); 
+  list-style-position: inside; 
+}
+
+#hero {
+  background-image: url(../images/heroroad.jpg); 
+  background-repeat: no-repeat; 
+  background-size: 100% 100%; 
+  color: #F5F5DC; 
+  height: 300px; 
+}
+
+footer {
+  background-color: #D2B48C; 
+  color: #000; 
+  font-size: .60em; 
+  font-style: italic; 
+  padding: 10px;
+  text-align: center;  
+}
+
+footer a:link { color: #2E0000; } 
+
+footer a:visited { color: #000; } 
+
+footer a:hover, footer a:focus { background-color: #F5F5DC; } 
+
+.mobile { display: none; }
+
+.desktop { display: inline; }
+
+table {
+  margin: auto;
+  width: 80%;
+}
+
+td, th { padding: 10px; } 
+
+tr:nth-child(odd) { background-color:#D2B48C; }
+
+label {
+  display: block; 
+  float: left; 
+  padding-right: 1em; 
+  text-align: left; 
+  width: 120px; 
+}
+
+input, textarea { display: block; margin-bottom: 20px; }
+
+input[type=submit] { margin-left: 130px; }
+
+@media only screen and (max-width: 64em) {
+  body {
+    background-color: #D2B48C; 
+    background-image: none; 
+    margin: 0; 
+  }
+  
+  #wrapper {
+    box-shadow: none; 
+    min-width: 0;
+    width: auto; 
+  }
+  
+  h1 {
+    background-image: url(../images/javalogomobile.gif); 
+    margin: 0;
+  }
+  
+  main { margin-left: 0; } 
+  
+  nav {
+    float: none;
+    padding: 0;
+    width: auto;
+  }
+  
+  nav ul { text-align: center; }
+  
+  nav li {
+    display: inline; 
+    padding: 0 0.75em; 
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  nav li {
+    background-color: #F5F5DC; 
+    box-shadow: 2px 2px 2px #300; 
+    display: inline-block; 
+    font-size: 120%; 
+    margin: 1%; 
+    padding: 2.5%;
+    text-align: center; 
+    width: 5em; 
+  }
+  
+  nav a { display: block; } 
+  
+  nav a:hover, nav a:focus { color: #330; } 
+  
+  main a:link { color: #FFF; }
+  
+  main a:visited { color: #EAEAEA; }
+  
+  main a:hover, main a:focus { color: #FFD700; }
+  
+  article { margin: 0; } 
+  
+  #hero { height: auto; }
+  
+  article img { display: none; } 
+  
+  .mobile { display: inline; }
+  
+  .desktop { display: none; } 
+  
+  label { float: none; text-align: left; }
+  
+  input[type=submit] {margin-left: 0; }
+  
+}
